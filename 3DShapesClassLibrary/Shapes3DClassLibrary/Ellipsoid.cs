@@ -146,7 +146,7 @@ namespace Geometry
             this.Location = new Point3D(x, y, z);
         }
 
-        public void MoveByAngle(float angle,Plane plane)
+        public void RotateByAngle(float angle,Plane plane)
         {
             switch (plane)
             {
@@ -166,7 +166,6 @@ namespace Geometry
                     {
                         anglesB.beta = correctAngle(anglesB.beta + angle);
                         anglesC.beta = correctAngle(anglesC.beta + angle);
-
                     }
                     break;
                 default:
